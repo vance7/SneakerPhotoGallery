@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Adidas Boom",
+    "id": "adidas-boom",
+    "snippet": "awesome adidas",
+    "release": 1,
+    "imageUrl": "img/sneakers/adidas-boom.jpg"
+  },
+  {
+    "name": "Nike Boom",
+    "id": "nike-boom",
+    "snippet": "awesome nike",
+    "release": 2,
+    "imageUrl": "img/sneakers/nike-boom.jpg"
+  },
+  {
+    "name": "Puma Boom",
+    "id": "puma-boom",
+    "snippet": "awesome puma",
+    "release": 4,
+    "imageUrl": "img/sneakers/puma-boom.jpg"
+  },
+  {
+    "name": "Vans Boom",
+    "id": "vans-boom",
+    "snippet": "awesome vans",
+    "release": 10,
+    "imageUrl": "img/sneakers/vans-boom.jpg"
+  },
+  {
+    "name": "Vans Awesome",
+    "id": "vans-awesome",
+    "snippet": "awesome vans",
+    "release": 10,
+    "imageUrl": "img/sneakers/vans-awesome.jpg"
+  },
+  {
+  "name": "Air Jordan 11",
+  "id": "air-jordan-11",
+  "snippet": "Air Jordan 11",
+  "release": 10,
+  "imageUrl": "img/sneakers/air-jordan-11.jpg"
+  },
+  {
+  "name": "Yeeze Boom",
+  "id": "yeeze-boom",
+  "snippet": "Yeeze Boom",
+  "release": 10,
+  "imageUrl": "img/sneakers/yeeze-boom.jpg"
+  },
+  {
+  "name": "Nike Awesome",
+  "id": "nike-awesome",
+  "snippet": "awesome Nike",
+  "release": 10,
+  "imageUrl": "img/sneakers/nike-awesome.jpg"
+  },
+  {
+    "name": "Nike Air Force 1",
+    "id": "nike-air-force-1",
+    "snippet": "awesome Nike",
+    "release": 10,
+    "imageUrl": "img/sneakers/air-force-1.jpg"
+  }
+]
