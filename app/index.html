@@ -14,6 +14,7 @@
     <script src="sneaker-list/sneaker-list.component.js"></script>
     <script src="sneaker-detail/sneaker-detail.module.js"></script>
     <script src="sneaker-detail/sneaker-detail.component.js"></script>
+
 </head>
 <body>
 <!--carousel begin-->
@@ -25,19 +26,19 @@
     </ol>
     <div class="carousel-inner thumbnail" role="listbox">
         <div class="carousel-item active">
-            <img src="img/bg/adidas_bg.jpg" class = "img-fluid" alt="First slide">
+            <img src="img/bg/adidas_bg.jpg" class="img-fluid" alt="First slide">
             <div class="carousel-caption">
                 <h2>即将上线</h2>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/bg/nike_bg.jpg" class = "img-fluid" alt="Second slide">
+            <img src="img/bg/nike_bg.jpg" class="img-fluid" alt="Second slide">
             <div class="carousel-caption">
                 <h2>即将上线</h2>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/bg/vans_bg.jpg" class = "img-fluid" alt="Third slide">
+            <img src="img/bg/vans_bg.jpg" class="img-fluid" alt="Third slide">
             <div class="carousel-caption">
                 <h2>即将上线</h2>
             </div>
@@ -54,9 +55,102 @@
 </div>
 <!--carousel end-->
 <!--navigation begin-->
-<!--sneaker-list.template-->
 <!--navigation end-->
-<div ng-view></div>
+<!--Sneakers-->
+<div id = "sneaker" ng-view></div>
+<!--Sneakers End-->
+<!--About Us-->
+<br>
+<br>
+<div id= "about" class="container">
+    <div class="col-md-10 offset-md-1">
+        <h1>About Us</h1>
+
+        <hr>
+
+        <p>
+            The Firm has had a great deal of experience and is highly regarded for its expertise in the areas of design,
+            construction administration, construction management, tight cost control and scheduling.
+        </p>
+        <p>
+            We have been involved in a wide range of building projects, including college facilities, banks, schools,
+            nursing homes, office buildings, churches, industrial buildings and major urban development projects.
+        </p>
+        <p>
+            The various projects have included new construction, renovation and adaptive re-use as a way of providing
+            new space for the various clients. Tessier Associates provides in-house programming, master planning,
+            architectural design, construction documentation, project administration and interior design services.
+            Sustainable design, as appropriate for each client, is incorporated in cost effective ways to benefit the
+            long term value of the buildings created by the firm.
+        </p>
+        <p>
+            Together with selected consultants, The Firm provides complete professional services including landscape
+            architecture, structural engineering, electrical and mechanical engineering and site planning.
+        </p>
+
+        <hr>
+
+    </div>
+</div>
+<!--About Us End-->
+<!--Contact-->
+<br>
+<br>
+<div id = "contact" class="container">
+    <div class="col-md-10 offset-md-1">
+        <h1>Contact</h1>
+
+        <hr>
+
+        <p>
+            喜欢我们的鞋吗? 动心的话请加微信: xxxx, 或者联系我们的邮箱:xxxx@123.com
+        </p>
+        <p>
+            网站合作请加微信: NMZO_ROGUE
+        </p>
+        <p>
+            Do you like our sneakers? Please contact WeChat: xxxx, or Email: xxxx@123.com
+        </p>
+        <p>
+            About website, please contact WeChat: NMZO_ROGUE
+        </p>
+
+        <hr>
+
+    </div>
+</div>
+<!--Contact End-->
+<!--Footer-->
+<br>
+<br>
+<nav id = "bottom" class="navbar navbar-full navbar-dark bg-inverse ">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <div class="col-md-2 offset-md-4">
+                <li class="nav-item text-center">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </div>
+            <div class="col-md-2 offset-md-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sneaker">Sneakers</a>
+                </li>
+            </div>
+
+            <!--<div class="col-md-2">-->
+                <!--<li class="nav-item float-xs-right">-->
+                    <!--<a class="nav-link" href="#about">About</a>-->
+                <!--</li>-->
+            <!--</div>-->
+            <!--<div class="col-md-2">-->
+                <!--<li class="nav-item float-xs-right">-->
+                    <!--<a class="nav-link" href="#contact">Contact</a>-->
+                <!--</li>-->
+            <!--</div>-->
+        </ul>
+    </div>
+</nav>
+<!--Footer End-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>

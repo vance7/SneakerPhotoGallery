@@ -2,47 +2,33 @@
     <a class="navbar-brand" href="#">Awesome Sneaker</a>
     <ul class="nav navbar-nav">
         <li class="nav-item ">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" ng-href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#sneakers">Sneakers</a>
+            <a class="nav-link" ng-href="#sneakers">Sneakers</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link" ng-href="#about">About</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+            <!--<a class="nav-link" ng-href="#contact">Contact</a>-->
+        <!--</li>-->
     </ul>
-    <!--<select ng-model = "$ctrl.orderProp" class="custom-select float-xs-right">-->
-    <!--<option selected>Order by</option>-->
-    <!--<option value="name">Alphabetical</option>-->
-    <!--<option value="-realease">Newest</option>-->
-    <!--</select>-->
     <form class="form-inline float-xs-right">
         <input ng-model="$ctrl.query" class="form-control" type="text" placeholder="Search">
     </form>
 </nav>
-<div  class="container" style="margin-top: 30px">
-    <div id = "sneakers" class="row">
+<div class="container" style="margin-top: 30px">
+    <div id="sneakers" class="row">
         <div>
-            <!--Body content-->
             <div class="col-md-4 thumbnail"
-                 ng-repeat="sneaker in $ctrl.sneakers | filter:$ctrl.query| orderBy:$ctrl.orderProp">
-                <a href="#!/sneakers/{{sneaker.id}}">
-                    <img ng-src="{{sneaker.imageUrl}}" alt=" {{sneaker.name}}" class="img-fluid img"/>
-                </a>
+                 ng-repeat="sneaker in $ctrl.sneakers | filter:$ctrl.query">
+                <!--<a href="#!/sneakers/{{sneaker.id}}">-->
+                <img ng-src="{{sneaker.imageUrl}}" alt=" {{sneaker.name}}" class="img-fluid img"/>
+                <!--</a>-->
+                <h5>{{sneaker.name}}</h5>
+                <p>{{sneaker.snippet}}</p>
             </div>
         </div>
-        <!--<ul class="sneakers">-->
-        <!--<li ng-repeat="sneaker in $ctrl.sneakers | filter:$ctrl.query| orderBy:$ctrl.orderProp"-->
-        <!--class="thumbnail">-->
-        <!--<a href="#!/sneakers/{{sneaker.id}}" class="thumb">-->
-        <!--<img ng-src="{{sneaker.imageUrl}}" alt = " {{sneaker.name}}" class = "img-fluid" />-->
-        <!--</a>-->
-        <!--<a href="#!/sneakers/{{sneaker.id}}">{{sneaker.name}}</a>-->
-        <!--<p>{{sneaker.snippet}}</p>-->
-        <!--</li>-->
-        <!--</ul>-->
     </div>
 </div>
